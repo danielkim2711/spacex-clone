@@ -134,6 +134,26 @@ section {
   background-image: url('../assets/images/section-a.webp');
 }
 
+.section-b {
+  background-image: url('../assets/images/section-b.webp');
+}
+
+.section-c {
+  background-image: url('../assets/images/section-c.webp');
+}
+
+.section-d {
+  background-image: url('../assets/images/section-d.webp');
+}
+
+.section-e {
+  background-image: url('../assets/images/section-e.webp');
+}
+
+.section-f {
+  background-image: url('../assets/images/section-f.webp');
+}
+
 .btn {
   position: relative;
   display: inline-block;
