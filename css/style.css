@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap');
 
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -11,8 +16,8 @@ html {
 }
 
 body {
-  background: #000;
-  color: #fff;
+  background: var(--color-black);
+  color: var(--color-white);
   font-family: 'Familjen Grotesk', sans-serif;
   margin: 0;
   padding: 0;
@@ -20,7 +25,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--color-white);
 }
 
 ul {
@@ -80,7 +85,7 @@ ul {
   left: 0;
   width: 100%;
   height: 1px;
-  background: #fff;
+  background: var(--color-white);
   transform: scaleX(0);
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   transform-origin: right center;
@@ -162,14 +167,14 @@ section {
   min-width: 130px;
   padding: 15px 50px;
   margin-top: 10px;
-  border: 2px solid #fff;
+  border: 2px solid var(--color-white);
   font-weight: 700;
   overflow: hidden;
   z-index: 2;
 }
 
 .btn:hover span {
-  color: #000;
+  color: var(--color-black);
 }
 
 .btn .hover {
@@ -178,8 +183,8 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
-  color: #000;
+  background-color: var(--color-white);
+  color: var(--color-black);
   z-index: -1;
   transform: translateY(100%);
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
@@ -195,6 +200,37 @@ section {
   left: 50%;
   transform: translateX(-50%);
   animation: fadeBounce 5s infinite;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  padding: 55px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer ul li {
+  color: #aaa;
+  font-size: 13px;
+  line-height: 2.5;
+  margin-right: 30px;
+  text-transform: uppercase;
+}
+
+footer ul li a {
+  color: var(--color-white);
+  transition: color 0.6s;
+}
+
+footer ul li a:hover {
+  color: #aaa;
 }
 
 /* Animations */
