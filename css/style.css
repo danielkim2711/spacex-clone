@@ -261,3 +261,39 @@ footer ul li a:hover {
     transform: translateY(0);
   }
 }
+
+/* Media Queries */
+
+@media (max-width: 960px) {
+  /* Hide Desktop Menu */
+  .desktop-main-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-inner {
+    bottom: 75px;
+    left: 20px;
+  }
+
+  .section-inner h2 {
+    font-size: 40px;
+  }
+
+  footer ul li:first-child {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  footer ul li {
+    margin-right: 15px;
+  }
+
+  .logo {
+    width: 150px;
+    margin: auto;
+  }
+}
