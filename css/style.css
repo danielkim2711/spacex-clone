@@ -233,6 +233,55 @@ footer ul li a:hover {
   color: #aaa;
 }
 
+/* Hamburger Menu */
+
+.hamburger {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  z-index: 10;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: var(--color-white);
+}
+
+.hamburger-middle {
+  transform: translateY(5px);
+}
+
+.hamburger-bottom {
+  transform: translateY(10px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
 /* Animations */
 
 @keyframes fadeInUp {
