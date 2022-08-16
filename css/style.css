@@ -256,6 +256,7 @@ footer ul li a:hover {
   top: 0;
   left: 0;
   background: var(--color-white);
+  transition: all 0.5s;
 }
 
 .hamburger-middle {
