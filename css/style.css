@@ -305,6 +305,56 @@ footer ul li a:hover {
   display: none;
 }
 
+/* Mobile Menu */
+
+.mobile-main-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background-color: var(--color-black);
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Bring Menu from Right */
+
+.show-menu {
+  transform: translateX(0);
+}
+
+.mobile-main-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 50px;
+  width: 100%;
+}
+
+.mobile-main-menu ul li {
+  border-bottom: 1px dotted #555;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  text-align: right;
+  width: 100%;
+}
+
+.mobile-main-menu ul li a {
+  color: var(--color-white);
+  transition: color 0.6s;
+}
+
+.mobile-main-menu ul li a:hover {
+  color: #aaa;
+}
+
 /* Animations */
 
 @keyframes fadeInUp {
