@@ -385,6 +385,26 @@ footer ul li a:hover {
   animation-fill-mode: both;
 }
 
+/* Stats */
+
+.stats {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.stats div span {
+  font-size: 160px;
+}
+
+.stats div h4 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
 /* Animations */
 
 @keyframes fadeInUp {
